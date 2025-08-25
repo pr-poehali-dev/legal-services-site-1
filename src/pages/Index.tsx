@@ -12,6 +12,16 @@ const Index = () => {
       icon: "Scale"
     },
     {
+      title: "Уголовное право",
+      description: "Защита по уголовным делам, представительство на всех стадиях процесса",
+      icon: "Shield"
+    },
+    {
+      title: "Гражданское право",
+      description: "Ведение гражданских дел, защита прав и законных интересов граждан",
+      icon: "Users"
+    },
+    {
       title: "Представительство в судах",
       description: "Квалифицированная защита ваших интересов в судах общей юрисдикции",
       icon: "Building"
@@ -113,7 +123,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
@@ -246,6 +256,26 @@ const Index = () => {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
+                <Icon name="Shield" size={32} className="text-primary mb-4" />
+                <CardTitle>Уголовное право</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Защита подозреваемых и обвиняемых, обжалование приговоров, досудебное расследование</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Icon name="Users" size={32} className="text-primary mb-4" />
+                <CardTitle>Гражданское право</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Семейные споры, наследственное право, защита прав потребителей, возмещение ущерба</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
                 <Icon name="Building2" size={32} className="text-primary mb-4" />
                 <CardTitle>Корпоративные споры</CardTitle>
               </CardHeader>
@@ -261,6 +291,16 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Взыскание задолженности, расторжение договоров, неустойка</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Icon name="Home" size={32} className="text-primary mb-4" />
+                <CardTitle>Жилищное право</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Споры с ЖКХ, выселение, приватизация, долевое строительство</p>
               </CardContent>
             </Card>
           </div>
