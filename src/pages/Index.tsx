@@ -46,16 +46,34 @@ const Index = () => {
       specialization: "Арбитражные споры"
     },
     {
+      name: "Сергей Волков",
+      position: "Партнёр",
+      experience: "18 лет опыта",
+      specialization: "Уголовное право"
+    },
+    {
       name: "Михаил Сидоров",
       position: "Партнёр",
       experience: "12 лет опыта", 
       specialization: "Корпоративное право"
     },
     {
+      name: "Ольга Морозова",
+      position: "Ведущий юрист",
+      experience: "10 лет опыта",
+      specialization: "Гражданское право"
+    },
+    {
       name: "Елена Козлова",
       position: "Ведущий юрист",
       experience: "8 лет опыта",
       specialization: "Договорная работа"
+    },
+    {
+      name: "Дмитрий Орлов",
+      position: "Юрист",
+      experience: "6 лет опыта",
+      specialization: "Жилищное право"
     }
   ];
 
@@ -207,11 +225,11 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Наша команда</h2>
             <p className="text-xl text-gray-600">
-              Опытные юристы с многолетней практикой в арбитражных спорах
+              Опытные юристы с многолетней практикой в различных отраслях права
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
