@@ -267,6 +267,238 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Reviews Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Отзывы клиентов</h2>
+            <p className="text-xl text-gray-600">
+              Что говорят о нас наши клиенты
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="flex text-yellow-400">
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                  </div>
+                </div>
+                <CardTitle className="text-lg">ООО "Торговый Дом Север"</CardTitle>
+                <CardDescription>Арбитражный спор по взысканию задолженности</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  "Команда юристов профессионально вела наше дело в арбитражном суде. 
+                  Благодаря их работе мы смогли взыскать 12 млн рублей задолженности. 
+                  Отличная стратегия и внимание к деталям."
+                </p>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={16} className="text-gray-500" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Александр Иванов</p>
+                    <p className="text-xs text-gray-500">Генеральный директор</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="flex text-yellow-400">
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                  </div>
+                </div>
+                <CardTitle className="text-lg">ЗАО "Строительная компания"</CardTitle>
+                <CardDescription>Корпоративный спор</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  "Сложный корпоративный конфликт был решен в нашу пользу. 
+                  Юристы проявили высокий профессионализм и добились справедливого решения. 
+                  Рекомендуем как надежных партнеров."
+                </p>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={16} className="text-gray-500" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Марина Петрова</p>
+                    <p className="text-xs text-gray-500">Учредитель</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="flex text-yellow-400">
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                  </div>
+                </div>
+                <CardTitle className="text-lg">ИП Соколов В.А.</CardTitle>
+                <CardDescription>Договорный спор</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  "Помогли расторгнуть невыгодный договор и взыскать неустойку. 
+                  Процесс прошел быстро и эффективно. Очень благодарен за 
+                  профессиональную помощь и поддержку."
+                </p>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={16} className="text-gray-500" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Виктор Соколов</p>
+                    <p className="text-xs text-gray-500">Индивидуальный предприниматель</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="flex text-yellow-400">
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                  </div>
+                </div>
+                <CardTitle className="text-lg">ОАО "Промышленная группа"</CardTitle>
+                <CardDescription>Банкротство</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  "Сопровождали процедуру банкротства должника. Благодаря 
+                  грамотной работе удалось максимально защитить наши интересы 
+                  и взыскать значительную часть долга."
+                </p>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={16} className="text-gray-500" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Елена Михайлова</p>
+                    <p className="text-xs text-gray-500">Финансовый директор</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="flex text-yellow-400">
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                  </div>
+                </div>
+                <CardTitle className="text-lg">ООО "Логистические решения"</CardTitle>
+                <CardDescription>Налоговый спор</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  "Успешно оспорили доначисления налоговой службы на сумму 
+                  8 млн рублей. Профессиональная команда, которая знает свое дело. 
+                  Обязательно обратимся снова при необходимости."
+                </p>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={16} className="text-gray-500" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Дмитрий Волков</p>
+                    <p className="text-xs text-gray-500">Главный бухгалтер</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="flex text-yellow-400">
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                    <Icon name="Star" size={20} />
+                  </div>
+                </div>
+                <CardTitle className="text-lg">Частный клиент</CardTitle>
+                <CardDescription>Защита прав потребителей</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  "Помогли взыскать компенсацию с застройщика за просрочку 
+                  сдачи квартиры. Внимательное отношение к клиенту и 
+                  результативная работа. Спасибо за помощь!"
+                </p>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={16} className="text-gray-500" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Анна Кузнецова</p>
+                    <p className="text-xs text-gray-500">Клиент</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center space-x-8 bg-gray-50 rounded-lg p-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">4.9</div>
+                <div className="flex text-yellow-400 justify-center mb-1">
+                  <Icon name="Star" size={16} />
+                  <Icon name="Star" size={16} />
+                  <Icon name="Star" size={16} />
+                  <Icon name="Star" size={16} />
+                  <Icon name="Star" size={16} />
+                </div>
+                <div className="text-sm text-gray-600">Средний рейтинг</div>
+              </div>
+              <div className="w-px h-16 bg-gray-300"></div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">150+</div>
+                <div className="text-sm text-gray-600">Довольных клиентов</div>
+              </div>
+              <div className="w-px h-16 bg-gray-300"></div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">95%</div>
+                <div className="text-sm text-gray-600">Успешных дел</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
